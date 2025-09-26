@@ -1,0 +1,81 @@
+{
+  "usuarios": [
+    {
+      "id": "19f0",
+      "nombre": "Daniel",
+      "correo": "daniel@gmail.com",
+      "contrasena": "12345678",
+      "tipoUsuario": "usuario"
+    },
+    {
+      "id": "4f00",
+      "nombre": "Nora",
+      "correo": "norafigueroa@gmail.com",
+      "contrasena": "qwer1234",
+      "tipoUsuario": "admin"
+    },
+    {
+      "id": "1edb",
+      "nombre": "Fio",
+      "correo": "fio@gmail.com",
+      "contrasena": "poiu0987",
+      "tipoUsuario": "usuario"
+    },
+    {
+      "id": "8c1e",
+      "nombre": "Caleb",
+      "correo": "caleb@gmail.com",
+      "contrasena": "qwertyuiop",
+      "tipoUsuario": "usuario"
+    }
+  ],
+  "especies": [
+    {
+      "id": "p4f1",
+      "nombre": "Peces",
+      "descripcion": "Los peces son animales acuáticos vertebrados que respiran por branquias y poseen aletas para nadar. Habitan ríos, lagos y océanos de todo el mundo.",
+      "icono": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7"    
+    },
+    {
+      "id": "r8k2",
+      "nombre": "Reptiles Marinos",
+      "descripcion": "Los reptiles marinos incluyen tortugas, iguanas y serpientes de mar que han adaptado su vida al océano. Aunque dependen del aire para respirar y anidan en tierra firme, pasan la mayor parte de su vida en ambientes marinos.",
+      "icono": "https://www.fishipedia.es/wp-content/uploads/2023/03/IMG_8677-1-725x483.jpeg"
+    },
+    {
+      "id": "c9m4",
+      "nombre": "Condrictios",
+      "descripcion": "Los condrictios son peces cartilaginosos como tiburones, rayas y quimeras. Son depredadores clave en los ecosistemas marinos.",
+      "icono": "https://www.divertysub.com/archivos/informacion/141027185356_caribbean_reef_shark.jpg"
+    },
+    {
+      "id": "i7t8",
+      "nombre": "Invertebrados Marinos",
+      "descripcion": "Los invertebrados marinos incluyen animales sin columna vertebral, como medusas, pulpos, estrellas de mar y crustáceos, que desempeñan roles ecológicos esenciales.",
+      "icono": "https://cdn0.ecologiaverde.com/es/posts/6/8/2/estrella_de_mar_caracteristicas_reproduccion_y_taxonomia_2286_600.webp"
+    },
+    {
+      "id": "c2x5",
+      "nombre": "Crustáceos",
+      "descripcion": "Los crustáceos marinos son invertebrados como cangrejos, camarones y langostas. Poseen exoesqueleto y habitan principalmente fondos marinos y arrecifes.",
+      "icono": "https://concepto.de/wp-content/uploads/2019/10/crustaceos-e1570987311146.jpg"
+    },
+    {
+      "id": "m6q3",
+      "nombre": "Mamíferos Marinos",
+      "descripcion": "Los mamíferos marinos incluyen delfines, ballenas y focas. Son animales de sangre caliente, respiran aire y muchas especies realizan migraciones largas.",
+      "icono": "https://static.vecteezy.com/system/resources/previews/026/596/270/non_2x/two-seals-playing-in-the-water-photo.jpg"
+    }
+  ],
+  "animales": [
+    
+    {
+      "id": "b09c",
+      "especieId": "c9m4",
+      "nombre": "Tiburón martillo",
+      "descripcion": "El tiburón martillo es conocido por su distintiva cabeza en forma de 'T'. Habita en aguas cálidas y es un depredador muy eficiente.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/55/Sphyrna_lewini_2.jpg",
+      "datoCurioso": "Su cabeza aplanada le proporciona un mejor campo de visión y sensores adicionales para detectar presas."
+    }
+  ]
+}
