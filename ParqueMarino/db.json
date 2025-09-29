@@ -34,7 +34,7 @@
       "id": "p4f1",
       "nombre": "Peces",
       "descripcion": "Los peces son animales acuáticos vertebrados que respiran por branquias y poseen aletas para nadar. Habitan ríos, lagos y océanos de todo el mundo.",
-      "icono": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7"    
+      "icono": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7"
     },
     {
       "id": "r8k2",
@@ -68,14 +68,117 @@
     }
   ],
   "animales": [
-    
     {
-      "id": "b09c",
-      "especieId": "c9m4",
-      "nombre": "Tiburón martillo",
-      "descripcion": "El tiburón martillo es conocido por su distintiva cabeza en forma de 'T'. Habita en aguas cálidas y es un depredador muy eficiente.",
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/55/Sphyrna_lewini_2.jpg",
-      "datoCurioso": "Su cabeza aplanada le proporciona un mejor campo de visión y sensores adicionales para detectar presas."
+      "id": "a7d9f",
+      "especieId": "p4f1",
+      "nombre": "Pargo rojo",
+      "descripcion": "Pez de gran tamaño que habita en fondos rocosos y arrecifes del océano Pacífico.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/28/Lutjanus_purpureus.JPG",
+      "datoCurioso": "Es muy valorado en la pesca deportiva y comercial."
+    },
+    {
+      "id": "c8p6x",
+      "especieId": "p4f1",
+      "nombre": "Verdel",
+      "descripcion": "Pez de pequeño tamaño con cuerpo comprimido lateralmente, habitante de arrecifes coralinos.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Paracanthurus_hepatus.jpg",
+      "datoCurioso": "Es conocido por su color azul brillante y su comportamiento pacífico."
+    },
+    {
+      "id": "d1v4z",
+      "especieId": "p4f1",
+      "nombre": "Atún",
+      "descripcion": "Pez de gran tamaño y velocidad, migratorio, que se encuentra en aguas abiertas del océano Pacífico.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Thunnus_thynnus.jpg",
+      "datoCurioso": "Es uno de los peces más rápidos, capaz de nadar a más de 70 km/h."
+    },
+    {
+      "id": "f2n7y",
+      "especieId": "p4f1",
+      "nombre": "Pez payaso",
+      "descripcion": "Pez pequeño de colores naranja, blanco y negro, que vive en simbiosis con anémonas marinas.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Amphiprion_ocellaris_%28Clown_anemonefish%29.jpg",
+      "datoCurioso": "El pez payaso es inmune al veneno de las anémonas gracias a una capa de mucosidad protectora."
+    },
+    {
+      "id": "g5k3m",
+      "especieId": "p4f1",
+      "nombre": "Caballito de mar",
+      "descripcion": "Pez pequeño con forma característica de caballo, que se sujeta con su cola prensil a plantas marinas.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Hippocampus_zosterae.jpg",
+      "datoCurioso": "En los caballitos de mar, son los machos quienes llevan a las crías en una bolsa incubadora."
+    }
+  ],
+  "citas": [
+    {
+      "id": "a9af",
+      "nombreUsuario": "Daniel",
+      "idUsuario": "19f0",
+      "fecha": "2025-10-18",
+      "cantidadBoletos": 7,
+      "boletos": {
+        "0-3 años": 3,
+        "4-11 años": 2,
+        "12+ años": 2
+      },
+      "total": 9000,
+      "estado": "pendiente"
+    },
+    {
+      "id": "8bed",
+      "nombreUsuario": "Daniel",
+      "idUsuario": "19f0",
+      "fecha": "2025-10-25",
+      "cantidadBoletos": 8,
+      "boletos": {
+        "0-3 años": 2,
+        "4-11 años": 3,
+        "12+ años": 3
+      },
+      "total": 13500,
+      "estado": "pendiente"
+    },
+    {
+      "id": "aec3",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-10-03",
+      "cantidadBoletos": 7,
+      "boletos": {
+        "0-3 años": 2,
+        "4-11 años": 3,
+        "12+ años": 2
+      },
+      "total": 10600,
+      "estado": "pendiente"
+    },
+    {
+      "id": "931f",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-09-30",
+      "cantidadBoletos": 8,
+      "boletos": {
+        "0-3 años": 1,
+        "4-11 años": 3,
+        "12+ años": 4
+      },
+      "total": 16400,
+      "estado": "pendiente"
+    },
+    {
+      "id": "4a7f",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-10-04",
+      "cantidadBoletos": 2,
+      "boletos": {
+        "0-3 años": 0,
+        "4-11 años": 1,
+        "12+ años": 1
+      },
+      "total": 4500,
+      "estado": "pendiente"
     }
   ]
 }

@@ -1,0 +1,84 @@
+.contenedorGaleria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tarjetaAnimal {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+}
+
+.columnaIzquierda {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+}
+
+.nombreAnimal {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.imagenAnimal {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.columnaDerecha {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descripcionAnimal {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.datoCuriosoAnimal {
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsivo: en pantallas pequeñas, apilar columnas */
+@media (max-width: 800px) {
+  .tarjetaAnimal {
+    flex-direction: column;
+  }
+  .columnaIzquierda, .columnaDerecha {
+    padding: 10px;
+  }
+}
+
+.botonRegresar {
+  display: block;
+  margin: 20px 40px 20px auto;
+  background-color: #0077b6;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.botonRegresar:hover {
+  background-color: #0096c7;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}

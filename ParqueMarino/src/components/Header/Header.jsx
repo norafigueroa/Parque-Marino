@@ -1,13 +1,15 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import logo from '../../assets/logo.png'
+import './Header.css';
 
 function Header() {
   const navigate = useNavigate();
 
   // Recuperar usuario del localStorage
   const usuario = JSON.parse(localStorage.getItem('usuario') || 'null');
-
+   
   // Función para mostrar SweetAlert con await
   const cerrarSesion = async () => {
     try {
@@ -36,16 +38,13 @@ function Header() {
 
         <div className="header">
           
-          <img className='logo' src="https://cdn-icons-png.flaticon.com/512/1303/1303577.png" width="100px" alt="Logo" />
-          <h1 className="nombreApp">Parque Marino</h1> 
+          <img className='logo' src={logo} alt="Logo" />
+          <h1 className="nombreApp">Parque Marino del Pacífico</h1> 
 
           {/* Mostrar botón solo si hay usuario */}
-          {usuario && (<button onClick={cerrarSesion}> Cerrar Sesión </button>)}
-
-          <hr />
+          {usuario && (<button className='botonHeader' onClick={cerrarSesion}> Cerrar Sesión </button>)}
 
         </div>
-
     </div>
   )
 }

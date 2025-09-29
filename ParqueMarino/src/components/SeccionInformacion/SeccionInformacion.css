@@ -1,0 +1,45 @@
+.seccion-info {
+  display: flex;
+  justify-content: center; /* centra las tarjetas */
+  gap: 30px;               /* espacio entre tarjetas */
+  flex-wrap: wrap;          /* en pantallas pequeñas se acomodan */
+  padding: 40px 20px;
+  background: #f0f9ff;
+}
+
+.tarjetaInfo {
+  background: #145da0;
+  color:azure;
+  border-radius: 25px;
+  padding: 30px 20px;
+  flex: 0 0 300px; 
+  max-width: 350px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.tarjetaInfo:hover {
+box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}
+
+.tarjetaInfo h3 {
+  font-family: 'Open Sauce', sans-serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.tarjetaInfo p {
+  margin: 8px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.imagen-precios {
+  width: 100%;           /* hace que la imagen ocupe todo el ancho del contenedor */
+  max-width: 320px;      /* limita su tamaño máximo */
+  height: auto;          /* mantiene la proporción */
+  display: block;        /* elimina comportamientos inline */
+  margin: 10px auto 0 auto; /* centra la imagen horizontalmente */
+  border-radius: 15px;   /* bordes redondeados */
+}

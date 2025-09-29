@@ -1,0 +1,29 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 15px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Links de navegación */
+.navBar h3 {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding: 0 10px;
+}
+
+.navBar h3:hover {
+  color: #00f5d4; /* celeste turquesa */
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

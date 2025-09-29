@@ -2,8 +2,9 @@ import React from 'react'
 
 import Header from '../components/Header/Header';
 import MenuUsuario from '../components/MenuUsuario/MenuUsuario';
-import Footer from '../components/Footer/Footer';
+import Descubre from '../components/Descubre/Descubre';
 import SeccionInformacion from '../components/SeccionInformacion/SeccionInformacion';
+import Footer from '../components/Footer/Footer';
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         
       <Header/>
       <MenuUsuario/>
+      <Descubre/>
       <SeccionInformacion/>
       <Footer/>
 

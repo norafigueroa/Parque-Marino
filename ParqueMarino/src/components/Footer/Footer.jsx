@@ -1,11 +1,11 @@
 import React from 'react'
+import './Footer.css';
 
 function Footer() {
   return (
     <div>
         <div>
            <footer className="footer">
-            <hr />
             <div className='columna1'>
               <p>Parque Marino del Pacífico</p>
               <p>El océano al alcance de todos</p>

@@ -1,0 +1,42 @@
+.descubre {
+  text-align: center;
+  margin: 30px 20px;
+}
+
+.descubre h1 {
+  font-family: 'The Seasons', sans-serif;
+  font-size: 40px;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+/* Botones principales */
+.descubre button {
+  background: linear-gradient(135deg, #00cfff, #00a8e8);
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #023047;
+  transition: all 0.3s ease;
+}
+
+.descubre button:hover {
+  background: linear-gradient(135deg, #00a8e8, #0077b6);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .descubre h1 {
+    font-size: 2rem;
+  }
+
+  .descubre button {
+    width: 80%;
+    margin: 8px auto;
+  }
+}

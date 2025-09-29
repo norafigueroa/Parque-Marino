@@ -1,12 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useNavigate  } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import { getUsers } from '../../services/ServicesUser';
+import './FormularioLogin.css';
 
 function FormularioLogin() {
   const navigate = useNavigate();
   const [correo, setCorreo] = useState('');
   const [contrasena, setContrasena] = useState('');
+  const [usuario, setUsuario] = useState(null);
+
+  useEffect(() => {
+    const usuarioLocal = JSON.parse(localStorage.getItem('usuario'));
+    if (usuarioLocal) {
+      setUsuario(usuarioLocal);
+      Swal.fire('Aviso', 'Ya has iniciado sesión', 'info');
+      //Redirigir directamente al Home
+      navigate('/');
+    }
+  }, [navigate]);
 
   const manejarLogin = async () => {
     if (!correo.trim() || !contrasena.trim()) {
@@ -52,6 +64,8 @@ function FormularioLogin() {
     await Swal.fire('Error', 'No se pudo iniciar sesión', 'error');
   }
 };
+
+ if (usuario) return null;  // Si ya hay sesión, no mostrar formulario
 
 
   return (

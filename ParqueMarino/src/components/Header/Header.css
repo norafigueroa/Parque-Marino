@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #02429b;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 77, 115, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.nombreApp {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Bubbleboddy Neue Trial', sans-serif;
+  margin: 0;
+}
+
+.botonHeader {
+  background: linear-gradient(135deg, #00cfff, #00a8e8); /* celeste degradado */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #023047; 
+  transition: all 0.3s ease;
+}
+
+.botonHeader:hover {
+  background: linear-gradient(135deg, #00a8e8, #0077b6); /* mezcla más intensa con azul */
+  transform: scale(1.08);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nombreApp {
+    font-size: 1.8rem;
+    width: 100%;
+    order: 2;
+  }
+
+  .header button {
+    order: 3;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nombreApp {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}

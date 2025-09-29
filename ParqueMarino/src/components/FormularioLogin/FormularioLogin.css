@@ -1,0 +1,68 @@
+/* Contenedor principal del formulario */
+.tarjetaLogin {
+  width: 400px;
+  background-color: #24303c;
+  padding: 30px;
+  margin: 60px auto;
+  border-radius: 8px;
+  font-family: 'calibri', sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+/* Título */
+.tarjetaLogin h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Inputs de correo y contraseña */
+.correo,
+.contrasena {
+  width: 100%;
+  background-color: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+/* Placeholder de los inputs */
+.correo::placeholder,
+.contrasena::placeholder {
+  color: #cfcfcf;
+}
+
+/* Botón ingresar */
+.ingresar {
+  width: 100%;
+  background-color: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ingresar:hover {
+  background-color: #1661a0;
+}
+
+/* Link de registro */
+.tarjetaLogin a {
+  color: rgb(2, 129, 233);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.tarjetaLogin a:hover {
+  text-decoration: underline;
+}
