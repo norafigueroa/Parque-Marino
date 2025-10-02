@@ -1,13 +1,20 @@
 import React from 'react'
+import './SeccionInstitucional.css'
 
 function SeccionInstitucional() {
   return (
     <div>
-        <div>
+        <div className="seccionInstitucional">
             
             <div className='historia'>
                 <h2>Nuestra Historia</h2>
-                <p>El Parque Marino del Pacífico, inaugurado en 2002 en Puntarenas, es un centro del MINAE dedicado a la conservación, educación y turismo sostenible. Su misión es proteger la biodiversidad marina y apoyar a las comunidades costeras mediante programas educativos, acuarios y proyectos de investigación. Con exhibiciones modernas y un centro de rescate de fauna, se ha convertido en un espacio único para aprender y disfrutar de la riqueza del océano costarricense.</p>
+                <p>El Parque Marino del Pacífico se inauguró el 26 de abril de 2002 en la ciudad de Puntarenas, Costa Rica. Este parque temático es el único de su tipo en el país. Su misión es promover la conservación, educación y uso sostenible de la biodiversidad marina del Pacífico costarricense. </p>
+                <p>Ubicado a unos 500 metros del muelle de los cruceros, al final del Paseo de los Turistas, el parque abarca aproximadamente tres hectáreas. Desde su apertura, ha sido un referente en educación ambiental, ofreciendo a los visitantes la oportunidad de conocer y aprender sobre la vida marina a través de acuarios, exhibiciones y actividades interactivas. </p>
+                <p>A lo largo de los años, el parque ha implementado programas en tres áreas clave:</p>
+                <p> ✔ Turismo Educativo Costero: fomentando el aprendizaje sobre la biodiversidad marina.</p>
+                <p> ✔ Acuario y Conservación: rescatando y rehabilitando especies marinas.</p>
+                <p> ✔ Acuicultura y Biotecnología Marina: investigando y promoviendo prácticas sostenibles en la costa pacífica.</p>
+                <p>   En 2023, el parque celebró su 21 aniversario, reafirmando su compromiso con la educación, la conservación y la investigación de la vida marina en el Pacífico costarricense.</p>
             </div>
 
             <div className='mision'>

@@ -18,17 +18,17 @@ function MenuUsuario() {
 
   return (
     <div>
-        <div>
           
           <div className='navBar'>
             <h3 onClick={() => navigate('/')}>🏠 Inicio</h3>
             <h3 onClick={() => navigate('/Especies')}>🐟 Especies</h3>
             <h3 onClick={() => manejarAcceso('/Citas')}>📅 Citas</h3>
             <h3 onClick={() => navigate('/Login')}>🔑 Inicio de Sesión</h3>
+            <h3 onClick={() => navigate('/Contacto')}>📞 Contacto</h3>
+            <h3 onClick={() => navigate('/SobreNosotros')}>🌐 Sobre Nosotros</h3>
             <h3 onClick={() => navigate('/Juego')}>🎮 Juego</h3>
           </div>
 
-        </div>
     </div>
   )
 }

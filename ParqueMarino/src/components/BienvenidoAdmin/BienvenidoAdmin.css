@@ -1,0 +1,15 @@
+.bienvenido-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.bienvenido-titulo {
+  font-size: 60px;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.bienvenido-texto {
+  font-size: 20px;
+  color: #023e8a;
+}

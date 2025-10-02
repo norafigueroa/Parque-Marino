@@ -1,18 +1,19 @@
 import React from 'react'
+
 import Header from '../components/Header/Header';
 import MenuAdmin from '../components/MenuAdmin/MenuAdmin';
-import TarjetaAnimales from '../components/TarjetaAnimales/TarjetaAnimales';
+import FormularioEspecies from '../components/FormularioEspecies/FormularioEspecies';
 import Footer from '../components/Footer/Footer';
 
-function AdminAnimales() {
+function AdminFormEspecie() {
   return (
     <div>
         <Header/>
         <MenuAdmin />
-        <TarjetaAnimales/>
-        <Footer/>
+        <FormularioEspecies/>
+        <Footer/>    
     </div>
   )
 }
 
-export default AdminAnimales
+export default AdminFormEspecie

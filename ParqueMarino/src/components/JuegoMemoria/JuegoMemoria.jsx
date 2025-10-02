@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Swal from 'sweetalert2';
 import './JuegoMemoria.css';
 
 const JuegoMemoria = () => {
@@ -71,7 +72,13 @@ const JuegoMemoria = () => {
   useEffect(() => {
     if (parejasEncontradas.length === 6 && cartas.length > 0) {
       setJuegoTerminado(true);
-    }
+       Swal.fire({
+      title: '¡Felicidades!',
+      text: `Completaste el juego en ${intentos} intentos`,
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
+  }
   }, [parejasEncontradas]);
 
   const manejarClickCarta = (index) => {
@@ -97,12 +104,6 @@ const JuegoMemoria = () => {
           <p className="juego-memoria-stat">Intentos: {intentos}</p>
           <p className="juego-memoria-stat">Parejas encontradas: {parejasEncontradas.length}/6</p>
         </div>
-
-        {juegoTerminado && (
-          <div className="juego-memoria-victoria">
-            ¡Felicidades! Completaste el juego en {intentos} intentos
-          </div>
-        )}
 
         <div className="juego-memoria-grid">
           {cartas.map((carta, index) => (

@@ -35,17 +35,6 @@
   font-weight: bold;
 }
 
-.juego-memoria-victoria {
-  background: #48cae4;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .juego-memoria-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -66,6 +55,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transform: scale(0.95);
   user-select: none;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .juego-memoria-carta.volteada {

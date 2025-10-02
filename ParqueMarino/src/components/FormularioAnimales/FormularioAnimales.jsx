@@ -2,9 +2,12 @@ import React, { useState, useEffect }  from 'react'
 import Swal from 'sweetalert2';
 import { postAnimal } from '../../services/ServicesAnimal';
 import { getSpecie } from '../../services/ServicesSpecie';
+import { useNavigate } from 'react-router-dom';
+import './FormularioAnimales.css';
 
 function FormularioAnimales() {
-   const [especieId, setEspecieId] = useState('');
+  const navegar = useNavigate();
+  const [especieId, setEspecieId] = useState('');
   const [nombre, setNombre] = useState('');
   const [descripcion, setDescripcion] = useState('');
   const [imagen, setImagen] = useState('');
@@ -24,6 +27,10 @@ function FormularioAnimales() {
     };
     cargarEspecies();
   }, []);
+
+    const manejarVolver = () => {
+      navigate('/AdminAnimales')
+    };
 
   const manejarGuardar = async () => {
     if (!especieId || !nombre.trim() || !descripcion.trim() || !imagen.trim() || !datoCurioso.trim()) {
@@ -51,32 +58,34 @@ function FormularioAnimales() {
 
   return (
     <div>
-        <div>
-            <h2>Formulario de animales</h2>
+        <div className='FormAnimal'>
+            <h2 className='tituloAnimal'>Formulario de animales</h2>
 
-            <label htmlFor="especiesId">Especie:</label>
+            <button className='botonRegresarAnimal' type="button" onClick={manejarVolver}> ← Volver a Animales </button>
+
+            <label className='labelAnimal' htmlFor="especiesId">Especie:</label>
               <select
-                id="especieId"
-                value={especieId}
-                onChange={(e) => setEspecieId(e.target.value)}> <option value="">Seleccione una especie</option> {especies.map((esp) => ( <option key={esp.id} value={esp.id}> {esp.nombre}</option>))}
+                id="especieId" value={especieId} onChange={(e) => setEspecieId(e.target.value)}> <option value="">Seleccione una especie</option> {especies.map((esp) => ( <option key={esp.id} value={esp.id}> {esp.nombre}</option>))}
               </select>
             <br /><br />
 
-            <label htmlFor="nombre">Nombre:</label>
+            <label className='labelanimal' htmlFor="nombre">Nombre:</label>
             <input type="text" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Escribe el nombre del animal" />
             <br />
-            <textarea id="descripcion" value={descripcion} onChange={(e) => setDescripcion(e.target.value)} placeholder="Escribe una breve descripción"></textarea>
+            <label className='labelanimal' htmlFor="descripcion">Descripción:</label>
+            <textarea className='textarea' id="descripcion" value={descripcion} onChange={(e) => setDescripcion(e.target.value)} placeholder="Escribe una breve descripción"></textarea>
             <br /><br />
 
-            <label htmlFor="imagen">Imagen:</label>
+            <label className='labelanimal' htmlFor="imagen">Imagen:</label>
             <input type="text" id="imagen" value={imagen} onChange={(e) => setImagen(e.target.value)} placeholder="Ruta o URL de la imagen" />
             <br /><br />
 
-            <label htmlFor="datoCurioso">Dato Curioso:</label>
+            <label className='labelanimal' htmlFor="datoCurioso">Dato Curioso:</label>
             <textarea id="datoCurioso" value={datoCurioso} onChange={(e) => setDatoCurioso(e.target.value)} placeholder="Agrega un dato curioso"></textarea>
             <br /><br />
 
-            <button type="submit" onClick={manejarGuardar}>Guardar</button>
+            <button className='guardarAnimal' type="submit" onClick={manejarGuardar}>Guardar</button>
+            
 
         </div>
     </div>

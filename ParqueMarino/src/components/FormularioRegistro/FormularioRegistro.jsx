@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { postUsers, getUsers } from '../../services/ServicesUser';
 import Swal from 'sweetalert2';
+import './FormularioRegistro.css'
 
 function FormularioRegistro() {
 
@@ -87,7 +88,7 @@ function FormularioRegistro() {
 
   return (
     <div>
-        <div>
+        <div className="tarjetaRegistro">
             <h2>Registro</h2>
 
             <label htmlFor="nombre">Nombre:</label>
@@ -108,7 +109,7 @@ function FormularioRegistro() {
 
             <button id="registrarse" onClick={manejarRegistro}>Registrarse</button> <br /><br />
 
-            <Link to="/Login">Ya tengo cuenta</Link>
+            <Link to="/Login">Ya tengo cuenta / Iniciar Sesión</Link>
           
         </div>
     </div>

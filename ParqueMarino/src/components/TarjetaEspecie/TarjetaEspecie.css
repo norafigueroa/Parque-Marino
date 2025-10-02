@@ -1,10 +1,14 @@
+.contenedorPrincipal { 
+  position: relative; 
+}
+
 .contenedorTarjetas {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   padding: 20px;
-  background-color: #f5f5f5; /* color de fondo suave */
+  background-color: #f5f5f5; 
 }
 
 /* Cada tarjeta individual */
@@ -54,4 +58,196 @@
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* ========== BOTÓN AGREGAR NUEVA ESPECIE ========== */
+.contenedorBotonAgregar {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  text-align: right;  
+}
+
+.botonAgregarEspecie {
+  padding: 12px 24px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.botonAgregarEspecie:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ========== MODAL DE EDICIÓN ========== */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContenido {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: modalEntrada 0.3s ease-out;
+}
+
+@keyframes modalEntrada {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modalTitulo {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modalCampo {
+  margin-bottom: 15px;
+}
+
+.modalLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+}
+
+.modalInput,
+.modalTextarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.modalInput:focus,
+.modalTextarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.modalTextarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.modalBotones {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modalBotonCancelar,
+.modalBotonGuardar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.modalBotonCancelar {
+  background-color: #6c757d;
+  color: white;
+}
+
+.modalBotonCancelar:hover {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+.modalBotonGuardar {
+  background-color: #007bff;
+  color: white;
+}
+
+.modalBotonGuardar:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Contenedor de botones dentro de la tarjeta */
+.accionesAdmin {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  justify-content: center; /* centra los botones dentro de la tarjeta */
+  flex-wrap: wrap; /* si no caben, se ajustan a la siguiente línea */
+}
+
+/* Botón Editar */
+.accionesAdmin .editar {
+  padding: 6px 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.accionesAdmin .editar:hover {
+  background-color: #0056b3;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* Botón Eliminar */
+.accionesAdmin .eliminar {
+  padding: 6px 14px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.accionesAdmin .eliminar:hover {
+  background-color: #a71d2a;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.tarjetaFooter {
+  margin-top: auto; /* se pega al fondo */
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
 }

@@ -1,0 +1,68 @@
+/* ========== CARRUSEL DE IMÁGENES ========== */
+.contenedorCarrusel {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carrusel {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.imagenCarrusel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Puntos indicadores */
+.puntosIndicadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.punto {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.punto:hover {
+  background-color: #999;
+  transform: scale(1.2);
+}
+
+.puntoActivo {
+  background-color: #007bff;
+  width: 14px;
+  height: 14px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .carrusel {
+    height: 200px;
+  }
+  
+  .punto {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .puntoActivo {
+    width: 12px;
+    height: 12px;
+  }
+}

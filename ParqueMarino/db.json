@@ -1,13 +1,6 @@
 {
   "usuarios": [
     {
-      "id": "19f0",
-      "nombre": "Daniel",
-      "correo": "daniel@gmail.com",
-      "contrasena": "12345678",
-      "tipoUsuario": "usuario"
-    },
-    {
       "id": "4f00",
       "nombre": "Nora",
       "correo": "norafigueroa@gmail.com",
@@ -27,6 +20,20 @@
       "correo": "caleb@gmail.com",
       "contrasena": "qwertyuiop",
       "tipoUsuario": "usuario"
+    },
+    {
+      "id": "cd32",
+      "nombre": "Madelin",
+      "correo": "madelin@gmail.com",
+      "contrasena": "zxcv0987",
+      "tipoUsuario": "usuario"
+    },
+    {
+      "id": "ff8b",
+      "nombre": "Steven",
+      "correo": "steven@gmail.com",
+      "contrasena": "zxcv7890",
+      "tipoUsuario": "admin"
     }
   ],
   "especies": [
@@ -37,16 +44,16 @@
       "icono": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7"
     },
     {
-      "id": "r8k2",
       "nombre": "Reptiles Marinos",
       "descripcion": "Los reptiles marinos incluyen tortugas, iguanas y serpientes de mar que han adaptado su vida al océano. Aunque dependen del aire para respirar y anidan en tierra firme, pasan la mayor parte de su vida en ambientes marinos.",
-      "icono": "https://www.fishipedia.es/wp-content/uploads/2023/03/IMG_8677-1-725x483.jpeg"
+      "icono": "https://www.fishipedia.es/wp-content/uploads/2023/03/IMG_8677-1-725x483.jpeg",
+      "id": "r8k2"
     },
     {
-      "id": "c9m4",
       "nombre": "Condrictios",
       "descripcion": "Los condrictios son peces cartilaginosos como tiburones, rayas y quimeras. Son depredadores clave en los ecosistemas marinos.",
-      "icono": "https://www.divertysub.com/archivos/informacion/141027185356_caribbean_reef_shark.jpg"
+      "icono": "https://www.divertysub.com/archivos/informacion/141027185356_caribbean_reef_shark.jpg",
+      "id": "c9m4"
     },
     {
       "id": "i7t8",
@@ -69,12 +76,12 @@
   ],
   "animales": [
     {
-      "id": "a7d9f",
-      "especieId": "p4f1",
-      "nombre": "Pargo rojo",
+      "nombre": "Pargo ",
       "descripcion": "Pez de gran tamaño que habita en fondos rocosos y arrecifes del océano Pacífico.",
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/28/Lutjanus_purpureus.JPG",
-      "datoCurioso": "Es muy valorado en la pesca deportiva y comercial."
+      "datoCurioso": "Es muy valorado en la pesca deportiva y comercial.",
+      "imagen": "https://images.thefishsite.com/fish/articles/marine-finfish/red-snapper-shoal.jpg?width=650&height=0",
+      "especieId": "p4f1",
+      "id": "a7d9f"
     },
     {
       "id": "c8p6x",
@@ -89,7 +96,7 @@
       "especieId": "p4f1",
       "nombre": "Atún",
       "descripcion": "Pez de gran tamaño y velocidad, migratorio, que se encuentra en aguas abiertas del océano Pacífico.",
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Thunnus_thynnus.jpg",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Q-lVlu8_xWKrs7alFDCyiTYeIqpUfWpOA&s",
       "datoCurioso": "Es uno de los peces más rápidos, capaz de nadar a más de 70 km/h."
     },
     {
@@ -97,7 +104,7 @@
       "especieId": "p4f1",
       "nombre": "Pez payaso",
       "descripcion": "Pez pequeño de colores naranja, blanco y negro, que vive en simbiosis con anémonas marinas.",
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Amphiprion_ocellaris_%28Clown_anemonefish%29.jpg",
+      "imagen": "https://www.webconsultas.com/sites/default/files/styles/wch_image_schema/public/media/0d/articulos/reproduccion-pez-payaso.jpg",
       "datoCurioso": "El pez payaso es inmune al veneno de las anémonas gracias a una capa de mucosidad protectora."
     },
     {
@@ -105,39 +112,211 @@
       "especieId": "p4f1",
       "nombre": "Caballito de mar",
       "descripcion": "Pez pequeño con forma característica de caballo, que se sujeta con su cola prensil a plantas marinas.",
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Hippocampus_zosterae.jpg",
+      "imagen": "https://cdn0.ecologiaverde.com/es/posts/9/0/4/el_caballito_de_mar_es_un_pez_5409_600.jpg",
       "datoCurioso": "En los caballitos de mar, son los machos quienes llevan a las crías en una bolsa incubadora."
+    },
+    {
+      "nombre": "Tortuga Verde",
+      "descripcion": "Tortuga marina herbívora de gran tamaño que habita aguas tropicales y subtropicales.",
+      "datoCurioso": "Pueden permanecer bajo el agua hasta 5 horas mientras descansan.",
+      "imagen": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYxiFAjaa8FjrVehTjGCslHMCuSNpSfNXgwU1UhJtrtSLFAtLh3A8k1TkOtdeLGLLF76PnlLdYZIgFbFrOyxlLennZGXBacmJrhSZCLiU",
+      "especieId": "r8k2",
+      "id": "a1r2m"
+    },
+    {
+      "nombre": "Iguana Marina",
+      "descripcion": "Único lagarto marino del mundo, endémico de las Islas Galápagos.",
+      "datoCurioso": "Puede sumergirse hasta 30 metros para alimentarse de algas.",
+      "imagen": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNlmB3MxGGyAdmAIXAqrgUedkaGtTXfk2z2I5hfRQN3AZWdRb_CTlXNYXnJgClVNW9FMhC3xFwUsrVh9AjBZq8DDYwAGhwnRVGylcW5g",
+      "especieId": "r8k2",
+      "id": "a2r3m"
+    },
+    {
+      "nombre": "Serpiente Marina",
+      "descripcion": "Reptil venenoso adaptado completamente a la vida marina.",
+      "datoCurioso": "Su veneno es más potente que el de las cobras terrestres.",
+      "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSVSLHp9cGjfxS5x-xs6DH8WR7REKLzEwmlK6wbPBbyHcx-HFdWtqIK9eDF0EzObqrF5wjIpQ5cMTV0xr_XpUuivIeal56rBL4NPnBUQahbiARh777_Bqfx8WS67wbc1aJRvvqpzGYDRo/s1600/the-underwater-world-of-philippines--southeast-asia--western-pacific-ocean--638856734-5ab16034642dca00369e3cc6.jpg",
+      "especieId": "r8k2",
+      "id": "a3r4m"
+    },
+    {
+      "nombre": "Tortuga Carey",
+      "descripcion": "Tortuga marina de caparazón colorido que habita arrecifes de coral.",
+      "datoCurioso": "Se alimenta principalmente de esponjas marinas.",
+      "imagen": "https://fordivers.store/cdn/shop/articles/Tortuga-carey.webp?v=1685605024",
+      "especieId": "r8k2",
+      "id": "a4r5m"
+    },
+    {
+      "nombre": "Tortuga Laúd",
+      "descripcion": "La tortuga marina más grande del mundo, puede pesar hasta 900 kg.",
+      "datoCurioso": "Puede sumergirse a más de 1,200 metros de profundidad.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Leatherback_sea_turtle_Tinglar%2C_USVI_%285839996547%29.jpg",
+      "especieId": "r8k2",
+      "id": "a5r6m"
+    },
+    {
+      "nombre": "Tiburón Martillo",
+      "descripcion": "Tiburón con cabeza en forma de T que le proporciona mayor campo de visión.",
+      "datoCurioso": "Puede detectar campos eléctricos producidos por otros animales.",
+      "imagen": "https://www.tiburoneswiki.com/Imagenes/tiburones-martillo-gigantes.jpg",
+      "especieId": "c9m4",
+      "id": "a6c7m"
+    },
+    {
+      "nombre": "Raya Águila",
+      "descripcion": "Raya elegante con manchas blancas que nada batiendo sus aletas como alas.",
+      "datoCurioso": "Pueden saltar fuera del agua hasta 2 metros de altura.",
+      "imagen": "https://aquaworld.com.mx/uploads/0000/1/2023/08/21/aqu1.jpg",
+      "especieId": "c9m4",
+      "id": "a7c8m"
+    },
+    {
+      "nombre": "Tiburón Tigre",
+      "descripcion": "Gran depredador con rayas distintivas en su cuerpo cuando es joven.",
+      "datoCurioso": "Tiene el apetito menos selectivo de todos los tiburones.",
+      "imagen": "https://maralliance.org/wp-content/uploads/2022/05/tiger-shark-1-scaled.jpeg",
+      "especieId": "c9m4",
+      "id": "a8c9m"
+    },
+    {
+      "nombre": "Mantarraya",
+      "descripcion": "Raya gigante que puede medir hasta 7 metros de envergadura.",
+      "datoCurioso": "Son animales muy inteligentes con el cerebro más grande entre los peces.",
+      "imagen": "https://cdn0.bioenciclopedia.com/es/posts/8/0/0/caracteristicas_de_la_mantarraya_gigante_8_0_600.jpg",
+      "especieId": "c9m4",
+      "id": "a9c0m"
+    },
+    {
+      "nombre": "Tiburón Ballena",
+      "descripcion": "El pez más grande del mundo, puede medir hasta 18 metros.",
+      "datoCurioso": "A pesar de su tamaño, se alimenta de plancton y peces pequeños.",
+      "imagen": "https://www.fundacionaquae.org/wp-content/uploads/2019/09/tibur%C3%B3n-ballena-1.jpg",
+      "especieId": "c9m4",
+      "id": "a0c1m"
+    },
+    {
+      "nombre": "Pulpo Común",
+      "descripcion": "Molusco inteligente con ocho brazos y capacidad de cambiar de color.",
+      "datoCurioso": "Tienen tres corazones y sangre azul.",
+      "imagen": "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/11F73/production/_120878537_4cfca0d7-2b27-474f-93b7-4c31269c5cdf.jpg.webp",
+      "especieId": "i7t8",
+      "id": "a1i2m"
+    },
+    {
+      "nombre": "Estrella de Mar",
+      "descripcion": "Equinodermo con capacidad de regenerar sus brazos perdidos.",
+      "datoCurioso": "No tienen cerebro ni sangre, pero tienen dos estómagos.",
+      "imagen": "https://content.nationalgeographic.com.es/medio/2024/05/27/estrella-de-mar-sobre-arrecife-de-coral_813e2a37_240527121609_1280x854.jpg",
+      "especieId": "i7t8",
+      "id": "a2i3m"
+    },
+    {
+      "nombre": "Medusa Luna",
+      "descripcion": "Medusa translúcida con forma de sombrilla que habita en aguas templadas.",
+      "datoCurioso": "No tienen cerebro, corazón ni ojos, pero pueden detectar luz.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhaXJBNOPo9aPh89RAOhAZfJCE4IwXJzeY3Q&s",
+      "especieId": "i7t8",
+      "id": "a3i4m"
+    },
+    {
+      "nombre": "Erizo de Mar",
+      "descripcion": "Equinodermo cubierto de espinas que se alimenta de algas.",
+      "datoCurioso": "Sus espinas son venenosas y pueden regenerarse.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQknw4_Xa8CBZwTlop-OUBGzQlnLGGStCkwjw&s",
+      "especieId": "i7t8",
+      "id": "a4i5m"
+    },
+    {
+      "nombre": "Calamar Gigante",
+      "descripcion": "Molusco de gran tamaño que habita en aguas profundas.",
+      "datoCurioso": "Sus ojos son los más grandes del reino animal, del tamaño de un balón.",
+      "imagen": "https://www.peces.com.mx/wp-content/uploads/2023/05/calamar-colosal-mesonychoteuthis-hamiltoni.jpg",
+      "especieId": "i7t8",
+      "id": "a5i6m"
+    },
+    {
+      "nombre": "Cangrejo Ermitaño",
+      "descripcion": "Crustáceo que usa conchas vacías como protección para su abdomen blando.",
+      "datoCurioso": "Cambian de concha a medida que crecen.",
+      "imagen": "https://cdn0.bioenciclopedia.com/es/posts/5/4/1/cangrejo_ermitano_145_600.jpg",
+      "especieId": "c2x5",
+      "id": "a6cr7m"
+    },
+    {
+      "nombre": "Langosta Espinosa",
+      "descripcion": "Crustáceo sin pinzas grandes que habita en grietas de arrecifes.",
+      "datoCurioso": "Pueden vivir hasta 50 años en estado salvaje.",
+      "imagen": "https://inaturalist-open-data.s3.amazonaws.com/photos/177215064/large.jpg",
+      "especieId": "c2x5",
+      "id": "a7cr8m"
+    },
+    {
+      "nombre": "Camarón Mantis",
+      "descripcion": "Crustáceo depredador con uno de los golpes más rápidos del reino animal.",
+      "datoCurioso": "Su golpe puede alcanzar la velocidad de una bala.",
+      "imagen": "https://cdn0.bioenciclopedia.com/es/posts/7/8/7/alimentacion_del_camaron_mantis_787_2_600.jpg",
+      "especieId": "c2x5",
+      "id": "a8cr9m"
+    },
+    {
+      "nombre": "Cangrejo Araña Gigante",
+      "descripcion": "El artrópodo más grande del mundo, con patas que pueden medir 4 metros.",
+      "datoCurioso": "Pueden vivir hasta 100 años.",
+      "imagen": "https://cdn0.bioenciclopedia.com/es/posts/9/7/7/cangrejo_gigante_japones_779_orig.jpg",
+      "especieId": "c2x5",
+      "id": "a9cr0m"
+    },
+    {
+      "nombre": "Cangrejo Azul",
+      "descripcion": "Crustáceo comestible común en las costas del Atlántico.",
+      "datoCurioso": "Pueden nadar de lado y hacia atrás usando sus patas traseras modificadas.",
+      "imagen": "https://static.inaturalist.org/photos/209761645/medium.jpg",
+      "especieId": "c2x5",
+      "id": "a0cr1m"
+    },
+    {
+      "nombre": "Delfín Nariz de Botella",
+      "descripcion": "Mamífero marino inteligente y sociable que vive en grupos llamados manadas.",
+      "datoCurioso": "Duermen con la mitad de su cerebro a la vez para poder respirar.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tursiops_truncatus_01.jpg",
+      "especieId": "m6q3",
+      "id": "a1m2m"
+    },
+    {
+      "nombre": "Ballena Jorobada",
+      "descripcion": "Gran cetáceo conocido por sus complejos cantos y saltos acrobáticos.",
+      "datoCurioso": "Sus canciones pueden durar hasta 20 minutos y viajar kilómetros bajo el agua.",
+      "imagen": "https://ichef.bbci.co.uk/images/ic/1024x576/p06sztyy.jpg",
+      "especieId": "m6q3",
+      "id": "a2m3m"
+    },
+    {
+      "nombre": "Orca",
+      "descripcion": "Delfín grande y poderoso depredador que caza en grupos coordinados.",
+      "datoCurioso": "Son los depredadores más versátiles del océano, cazan desde peces hasta ballenas.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/37/Killerwhales_jumping.jpg",
+      "especieId": "m6q3",
+      "id": "a3m4m"
+    },
+    {
+      "nombre": "Foca Monje",
+      "descripcion": "Foca tropical en peligro de extinción que habita aguas cálidas.",
+      "datoCurioso": "Son una de las focas más raras y amenazadas del mundo.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/83/Monachus_schauinslandi.jpg",
+      "especieId": "m6q3",
+      "id": "a4m5m"
+    },
+    {
+      "nombre": "Manatí",
+      "descripcion": "Mamífero marino herbívoro pacífico que habita aguas costeras cálidas.",
+      "datoCurioso": "Pueden comer hasta el 10% de su peso corporal en plantas al día.",
+      "imagen": "https://cdn0.bioenciclopedia.com/es/posts/6/0/0/manati_6_orig.jpg",
+      "especieId": "m6q3",
+      "id": "a5m6m"
     }
   ],
   "citas": [
-    {
-      "id": "a9af",
-      "nombreUsuario": "Daniel",
-      "idUsuario": "19f0",
-      "fecha": "2025-10-18",
-      "cantidadBoletos": 7,
-      "boletos": {
-        "0-3 años": 3,
-        "4-11 años": 2,
-        "12+ años": 2
-      },
-      "total": 9000,
-      "estado": "pendiente"
-    },
-    {
-      "id": "8bed",
-      "nombreUsuario": "Daniel",
-      "idUsuario": "19f0",
-      "fecha": "2025-10-25",
-      "cantidadBoletos": 8,
-      "boletos": {
-        "0-3 años": 2,
-        "4-11 años": 3,
-        "12+ años": 3
-      },
-      "total": 13500,
-      "estado": "pendiente"
-    },
     {
       "id": "aec3",
       "nombreUsuario": "Fio",
@@ -150,21 +329,7 @@
         "12+ años": 2
       },
       "total": 10600,
-      "estado": "pendiente"
-    },
-    {
-      "id": "931f",
-      "nombreUsuario": "Fio",
-      "idUsuario": "1edb",
-      "fecha": "2025-09-30",
-      "cantidadBoletos": 8,
-      "boletos": {
-        "0-3 años": 1,
-        "4-11 años": 3,
-        "12+ años": 4
-      },
-      "total": 16400,
-      "estado": "pendiente"
+      "estado": "incumplida"
     },
     {
       "id": "4a7f",
@@ -178,7 +343,145 @@
         "12+ años": 1
       },
       "total": 4500,
+      "estado": "completada"
+    },
+    {
+      "id": "0a92",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-10-01",
+      "cantidadBoletos": 2,
+      "boletos": {
+        "0-3 años": 0,
+        "4-11 años": 1,
+        "12+ años": 1
+      },
+      "total": 4500,
       "estado": "pendiente"
+    },
+    {
+      "id": "3e06",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-10-25",
+      "cantidadBoletos": 5,
+      "boletos": {
+        "0-3 años": 1,
+        "4-11 años": 2,
+        "12+ años": 2
+      },
+      "total": 9000,
+      "estado": "incumplida"
+    },
+    {
+      "id": "c281",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-10-04",
+      "cantidadBoletos": 3,
+      "boletos": {
+        "0-3 años": 0,
+        "4-11 años": 1,
+        "12+ años": 2
+      },
+      "total": 7400,
+      "estado": "pendiente"
+    },
+    {
+      "id": "e3d4",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-10-16",
+      "cantidadBoletos": 8,
+      "boletos": {
+        "0-3 años": 2,
+        "4-11 años": 3,
+        "12+ años": 3
+      },
+      "total": 13500,
+      "estado": "pendiente"
+    },
+    {
+      "id": "a5f3",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-10-11",
+      "cantidadBoletos": 4,
+      "boletos": {
+        "0-3 años": 1,
+        "4-11 años": 2,
+        "12+ años": 1
+      },
+      "total": 6100,
+      "estado": "pendiente"
+    },
+    {
+      "id": "8c37",
+      "nombreUsuario": "Fio",
+      "idUsuario": "1edb",
+      "fecha": "2025-10-11",
+      "cantidadBoletos": 5,
+      "boletos": {
+        "0-3 años": 1,
+        "4-11 años": 2,
+        "12+ años": 2
+      },
+      "total": 9000,
+      "estado": "pendiente"
+    },
+    {
+      "id": "ce70",
+      "nombreUsuario": "Caleb",
+      "idUsuario": "8c1e",
+      "fecha": "2025-10-16",
+      "cantidadBoletos": 3,
+      "boletos": {
+        "0-3 años": 0,
+        "4-11 años": 0,
+        "12+ años": 3
+      },
+      "total": 8700,
+      "estado": "pendiente"
+    },
+    {
+      "id": "c592",
+      "nombreUsuario": "Caleb",
+      "idUsuario": "8c1e",
+      "fecha": "2025-10-03",
+      "cantidadBoletos": 5,
+      "boletos": {
+        "0-3 años": 1,
+        "4-11 años": 2,
+        "12+ años": 2
+      },
+      "total": 9000,
+      "estado": "pendiente"
+    }
+  ],
+  "tarjetas": [
+    {
+      "id": "t1",
+      "usuarioId": "1edb",
+      "numeroTarjeta": "4532015112830366",
+      "nombreTitular": "Fio",
+      "fechaVencimiento": "08/26",
+      "cvv": "456"
+    },
+    {
+      "id": "t2",
+      "usuarioId": "8c1e",
+      "numeroTarjeta": "5425233430109903",
+      "nombreTitular": "Caleb",
+      "fechaVencimiento": "11/27",
+      "cvv": "789"
+    },
+    {
+      "id": "t3",
+      "usuarioId": "cd32",
+      "numeroTarjeta": "4916338506082832",
+      "nombreTitular": "Madelin",
+      "fechaVencimiento": "03/28",
+      "cvv": "321"
     }
   ]
 }

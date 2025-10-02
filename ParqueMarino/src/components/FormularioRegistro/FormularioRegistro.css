@@ -1,0 +1,80 @@
+/* Contenedor principal del formulario de registro */
+.tarjetaRegistro {
+  width: 420px;
+  background-color: #e0eaf7;
+  padding: 30px;
+  margin: 60px auto;
+  border-radius: 8px;
+  font-family: 'calibri', sans-serif;
+  color: #24303c;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.tarjetaRegistro h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #1f53c5;
+}
+
+/* Labels */
+.tarjetaRegistro label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #24303c;
+}
+
+/* Inputs */
+.tarjetaRegistro input {
+  width: 100%;
+  background-color: #d2e4fd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri', sans-serif;
+  font-size: 16px;
+  color: #24303c;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.tarjetaRegistro input:focus {
+  border-color: #1661a0;
+  box-shadow: 0 0 5px rgba(31, 83, 197, 0.3);
+}
+
+/* Botón registrarse */
+#registrarse {
+  width: 100%;
+  background-color: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#registrarse:hover {
+  background-color: #1661a0;
+}
+
+/* Link de login */
+.tarjetaRegistro a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #1f53c5;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.tarjetaRegistro a:hover {
+  text-decoration: underline;
+}

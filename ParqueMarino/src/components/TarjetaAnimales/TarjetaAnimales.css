@@ -62,23 +62,68 @@
   }
 }
 
-.botonRegresar {
-  display: block;
-  margin: 20px 40px 20px auto;
-  background-color: #0077b6;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease-in-out;
+.contenedorBotonAgregar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
 }
 
-.botonRegresar:hover {
-  background-color: #0096c7;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+.botonAgregarAnimal {
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botonAgregarAnimal:hover {
+  background-color: #005f87;
+}
+
+/* Barra de filtro de especies */
+select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #0077b6;
+  transition: border-color 0.3s;
+  color: white;
+}
+
+select:focus {
+  border-color: #0077b6;
+}
+
+
+.contenedorBotonVolver {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.contenedorBotonRegresar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.botonRegresarAnimal {
+  background-color: #1f53c5;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botonRegresarAnimal:hover {
+  background-color: #495057;
 }
